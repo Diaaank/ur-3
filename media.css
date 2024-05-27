@@ -1,0 +1,39 @@
+@media(min-width: 600px) and (max-width: 1199px) {
+    .container {
+        padding: 50px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 599px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .banner  {
+        height: 400px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

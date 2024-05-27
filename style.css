@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1::before {
+    content: "Lorem";
+    color: #f5e4e4;
+}
+
+header {
+    height: 100px;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+.logo i {
+    font-size: 40px;
+}
+
+.banner {
+    height: 80vh;
+    background: url(img/01.jpg) no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffc4c4;
+    font-size: 20px;
+    position: relative;
+}
+
+.banner h1 {
+    position: relative;
+    z-index: 2;
+}
+
+.banner::before {
+    content: "";
+    background-color: #0006;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.info {
+    background-color: rgba(240, 57, 57, 0.812);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.info__card {
+    border: 1px solid;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.info__card i {
+    font-size: 4em;
+}
+
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
